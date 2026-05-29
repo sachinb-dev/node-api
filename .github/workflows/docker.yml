@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build Docker Image
-        run: docker build -t ../../node-api .
+        run: docker build -f dockerfile.dev -t node-api .
